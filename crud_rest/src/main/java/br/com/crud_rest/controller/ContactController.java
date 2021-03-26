@@ -62,4 +62,10 @@ public class ContactController {
 			return ResponseEntity.ok().build();
 		}).orElse(ResponseEntity.notFound().build());
 	}
+
+	@GetMapping("/{name}")
+	public ResponseEntity getName() {
+		return ResponseEntity.ok();
+	}
+
 }
